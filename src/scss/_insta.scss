@@ -1,0 +1,19 @@
+.insta {
+  
+  .instaWrapper {
+
+    .instaLink {
+
+      .instaPost {
+        width: 48%;
+        height: 48%;
+        margin: 0 1%;
+        padding-bottom: 1.5%;
+        &:nth-last-child(2) {
+          padding-bottom: none;
+        }
+      }  
+    }
+  }
+}
+

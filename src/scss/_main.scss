@@ -1,0 +1,78 @@
+
+html {
+  background-color: #F2F2F2;
+}
+
+.App {
+  text-align: center;
+}
+
+.mywebsait {
+  background-color: white;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  margin: $spacing-tablet-portrait auto;
+  width: $tablet-portrait;
+  padding: $spacing-tablet-portrait;
+  @include mobile {
+    margin: $spacing-mobile auto;
+    width: $mobile;
+    padding: $spacing-mobile;
+  }
+}
+
+.geziech {
+  width: calc(#{$tablet-portrait} / 2);
+  @include mobile {
+    width: calc(#{$mobile} / 2);
+  }
+}
+
+.header {
+}
+
+.blocklayout {
+  position: relative;
+  margin-bottom: $spacing-bottom-portrait;
+  @include mobile {
+    margin-bottom: $spacing-bottom-mobile;
+  }
+  h1 {
+    font-family: 'Tristan';
+    font-size: $font-size-h1;
+    letter-spacing: $font-letterspacing-h1;
+    @include mobile {
+      font-size: $font-size-h1-mobile;
+      letter-spacing: $font-letterspacing-h1-mobile;
+    }
+  }
+  p, h3 {
+    font-family: 'Bob';
+    font-size: $font-size-p;
+    text-align: justify;
+    letter-spacing: $font-letterspacing-p;
+    padding: 0 calc(#{$spacing-tablet-portrait} * 4);
+    @include mobile {
+      font-size: $font-size-p-mobile;
+      letter-spacing: $font-letterspacing-p-mobile;
+      padding: 0 calc(#{$spacing-mobile} * 2);
+    }
+  }
+  &::after {
+    position: absolute;
+    left: 49%;
+    bottom: calc(#{$spacing-bottom-portrait + 14} - #{$spacing-bottom-portrait} * 1.65);
+    font-family: 'Tristan';
+    font-size: 28px;
+    content: '&';
+    @include mobile {
+      bottom: calc(#{$spacing-bottom-mobile + 14} - #{$spacing-bottom-mobile} * 1.7);
+    }
+  }
+}
+
+.intro {
+}
+
+.myText {
+}

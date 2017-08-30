@@ -1,0 +1,70 @@
+
+$mobile: 320px;
+$tablet-portrait: 768px;
+$table-landscape: 1024px; 
+
+$font-size-h1: 80px;
+$font-size-h1-mobile: 58px;
+
+$font-size-p: 17px;
+$font-size-p-mobile: 12px;
+
+$font-letterspacing-h1: 3px;
+$font-letterspacing-h1-mobile: .5px;
+
+$font-letterspacing-p: 1px;
+$font-letterspacing-p-mobile: .7px;
+
+$color-dark: #333333;
+
+$spacing-mobile: 20px;
+$spacing-tablet-portrait: 40px;
+
+$spacing-bottom-mobile: 100px;
+$spacing-bottom-portrait: 200px;
+
+
+//Tristan
+@font-face {
+  font-family: 'Tristan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/fonts/Metalista.otf'); /* IE9 Compat Modes */
+  src: local('Tristan'), local('Tristan'),
+       url('../src/fonts/Metalista.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/fonts/Metalista.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/fonts/Metalista.woff') format('woff'), /* Modern Browsers */
+       url('../src/fonts/Metalista.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/fonts/Metalista.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+//Bob
+@font-face {
+  font-family: 'Bob';
+  src: url('../src/fonts/FuturaPTBook.otf'); /* IE9 Compat Modes */
+  src: local('Bob'), local('Bob'),
+       url('../src/fonts/FuturaPTBook.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../src/fonts/FuturaPTBook.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../src/fonts/FuturaPTBook.woff') format('woff'), /* Modern Browsers */
+       url('../src/fonts/FuturaPTBook.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../src/fonts/FuturaPTBook.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+
+@mixin mobile {
+  @media (min-width: $mobile) and (max-width: $tablet-portrait) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (min-width: $tablet-portrait) and (max-width: $table-landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (min-width: $table-landscape) {
+    @content;
+  }
+}

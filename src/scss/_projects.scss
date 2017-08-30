@@ -1,0 +1,25 @@
+
+.projects {
+  .projectsWrapper {
+    .project {
+      margin-bottom: calc(#{$spacing-bottom-portrait}/4);
+      @include mobile {
+        margin-bottom: calc(#{$spacing-bottom-mobile}/4);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+      }
+      .projectGif {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

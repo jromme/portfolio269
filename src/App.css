@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Tristan';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/fonts/Metalista.otf");
+  /* IE9 Compat Modes */
+  src: local("Tristan"), local("Tristan"), url("../src/fonts/Metalista.eot?#iefix") format("embedded-opentype"), url("../src/fonts/Metalista.woff2") format("woff2"), url("../src/fonts/Metalista.woff") format("woff"), url("../src/fonts/Metalista.ttf") format("truetype"), url("../src/fonts/Metalista.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Bob';
+  src: url("../src/fonts/FuturaPTBook.otf");
+  /* IE9 Compat Modes */
+  src: local("Bob"), local("Bob"), url("../src/fonts/FuturaPTBook.eot?#iefix") format("embedded-opentype"), url("../src/fonts/FuturaPTBook.woff2") format("woff2"), url("../src/fonts/FuturaPTBook.woff") format("woff"), url("../src/fonts/FuturaPTBook.ttf") format("truetype"), url("../src/fonts/FuturaPTBook.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+html {
+  background-color: #F2F2F2; }
+
+.App {
+  text-align: center; }
+
+.mywebsait {
+  background-color: white;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  margin: 40px auto;
+  width: 768px;
+  padding: 40px; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .mywebsait {
+      margin: 20px auto;
+      width: 320px;
+      padding: 20px; } }
+
+.geziech {
+  width: calc(768px / 2); }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .geziech {
+      width: calc(320px / 2); } }
+
+.blocklayout {
+  position: relative;
+  margin-bottom: 200px; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .blocklayout {
+      margin-bottom: 100px; } }
+  .blocklayout h1 {
+    font-family: 'Tristan';
+    font-size: 80px;
+    letter-spacing: 3px; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .blocklayout h1 {
+        font-size: 58px;
+        letter-spacing: 0.5px; } }
+  .blocklayout p, .blocklayout h3 {
+    font-family: 'Bob';
+    font-size: 17px;
+    text-align: justify;
+    letter-spacing: 1px;
+    padding: 0 calc(40px * 4); }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .blocklayout p, .blocklayout h3 {
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        padding: 0 calc(20px * 2); } }
+  .blocklayout::after {
+    position: absolute;
+    left: 49%;
+    bottom: calc(214px - 200px * 1.65);
+    font-family: 'Tristan';
+    font-size: 28px;
+    content: '&'; }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .blocklayout::after {
+        bottom: calc(114px - 100px * 1.7); } }
+
+.insta .instaWrapper .instaLink .instaPost {
+  width: 48%;
+  height: 48%;
+  margin: 0 1%;
+  padding-bottom: 1.5%; }
+  .insta .instaWrapper .instaLink .instaPost:nth-last-child(2) {
+    padding-bottom: none; }
+
+.projects .projectsWrapper .project {
+  margin-bottom: calc(200px/4); }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .projects .projectsWrapper .project {
+      margin-bottom: calc(100px/4); } }
+  .projects .projectsWrapper .project h1 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.5px; }
+  .projects .projectsWrapper .project .projectGif {
+    display: flex;
+    justify-content: center; }
+    .projects .projectsWrapper .project .projectGif img {
+      width: 80%;
+      height: 100%; }
+
+.bloggything .bloggythingWrapper .article {
+  margin-bottom: calc(200px/4); }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .bloggything .bloggythingWrapper .article {
+      margin-bottom: calc(100px/4); } }
+  .bloggything .bloggythingWrapper .article h1 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.5px; }
+  .bloggything .bloggythingWrapper .article h3 {
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: 'Bob';
+    margin: 0; }
+  .bloggything .bloggythingWrapper .article p {
+    margin-top: 0; }
+  .bloggything .bloggythingWrapper .article p:first-letter {
+    font-family: 'Tristan';
+    float: left;
+    display: block;
+    font-size: 400%;
+    margin-top: -10px; }
+  .bloggything .bloggythingWrapper .article .projectGif {
+    display: flex;
+    justify-content: center; }
+    .bloggything .bloggythingWrapper .article .projectGif img {
+      width: 80%;
+      height: 100%; }
