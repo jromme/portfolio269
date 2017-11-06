@@ -53,27 +53,37 @@ html {
       .blocklayout h1 {
         font-size: 58px;
         letter-spacing: 0.5px; } }
-  .blocklayout p, .blocklayout h3 {
+  .blocklayout p {
     font-family: 'Bob';
     font-size: 17px;
     text-align: justify;
     letter-spacing: 1px;
     padding: 0 calc(40px * 4); }
     @media (min-width: 320px) and (max-width: 768px) {
-      .blocklayout p, .blocklayout h3 {
+      .blocklayout p {
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        padding: 0 calc(20px * 2); } }
+  .blocklayout h3 {
+    font-family: 'Bob';
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 0 calc(40px * 4); }
+    @media (min-width: 320px) and (max-width: 768px) {
+      .blocklayout h3 {
         font-size: 12px;
         letter-spacing: 0.7px;
         padding: 0 calc(20px * 2); } }
   .blocklayout::after {
     position: absolute;
     left: 49%;
-    bottom: calc(214px - 200px * 1.65);
+    bottom: calc(200px - 200px * 1.6);
     font-family: 'Tristan';
     font-size: 28px;
     content: '&'; }
     @media (min-width: 320px) and (max-width: 768px) {
       .blocklayout::after {
-        bottom: calc(114px - 100px * 1.7); } }
+        bottom: calc(100px - 100px * 1.7); } }
 
 .insta .instaWrapper .instaLink .instaPost {
   width: 48%;
@@ -116,12 +126,12 @@ html {
     margin: 0; }
   .bloggything .bloggythingWrapper .article p {
     margin-top: 0; }
-  .bloggything .bloggythingWrapper .article p:first-letter {
-    font-family: 'Tristan';
-    float: left;
-    display: block;
-    font-size: 400%;
-    margin-top: -10px; }
+    .bloggything .bloggythingWrapper .article p:first-letter {
+      font-family: 'Tristan';
+      float: left;
+      display: block;
+      font-size: 280%;
+      margin-top: -9px; }
   .bloggything .bloggythingWrapper .article .projectGif {
     display: flex;
     justify-content: center; }

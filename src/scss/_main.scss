@@ -46,7 +46,7 @@ html {
       letter-spacing: $font-letterspacing-h1-mobile;
     }
   }
-  p, h3 {
+  p {
     font-family: 'Bob';
     font-size: $font-size-p;
     text-align: justify;
@@ -58,15 +58,26 @@ html {
       padding: 0 calc(#{$spacing-mobile} * 2);
     }
   }
+  h3 {
+    font-family: 'Bob';
+    font-size: $font-size-p;
+    letter-spacing: $font-letterspacing-p;
+    padding: 0 calc(#{$spacing-tablet-portrait} * 4);
+    @include mobile {
+      font-size: $font-size-p-mobile;
+      letter-spacing: $font-letterspacing-p-mobile;
+      padding: 0 calc(#{$spacing-mobile} * 2);
+    }
+  }
   &::after {
     position: absolute;
     left: 49%;
-    bottom: calc(#{$spacing-bottom-portrait + 14} - #{$spacing-bottom-portrait} * 1.65);
+    bottom: calc(#{$spacing-bottom-portrait} - #{$spacing-bottom-portrait} * 1.6);
     font-family: 'Tristan';
     font-size: 28px;
     content: '&';
     @include mobile {
-      bottom: calc(#{$spacing-bottom-mobile + 14} - #{$spacing-bottom-mobile} * 1.7);
+      bottom: calc(#{$spacing-bottom-mobile} - #{$spacing-bottom-mobile} * 1.7);
     }
   }
 }

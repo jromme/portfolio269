@@ -21,14 +21,15 @@
       }
       p {
         margin-top: 0;
+        &:first-letter {
+          font-family: 'Tristan';
+          float: left;
+          display: block;
+          font-size: 280%;
+          margin-top: -9px;
+        }
       }
-      p:first-letter {
-        font-family: 'Tristan';
-        float: left;
-        display: block;
-        font-size: 400%;
-        margin-top: -10px;
-      }
+
       .projectGif {
         display: flex;
         justify-content: center;
