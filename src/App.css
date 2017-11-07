@@ -55,9 +55,8 @@ html {
         letter-spacing: 0.5px; } }
   .blocklayout p {
     font-family: 'Bob';
-    font-size: 17px;
+    font-size: 18px;
     text-align: justify;
-    letter-spacing: 1px;
     padding: 0 calc(40px * 4); }
     @media (min-width: 320px) and (max-width: 768px) {
       .blocklayout p {
@@ -66,7 +65,7 @@ html {
         padding: 0 calc(20px * 2); } }
   .blocklayout h3 {
     font-family: 'Bob';
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 1px;
     padding: 0 calc(40px * 4); }
     @media (min-width: 320px) and (max-width: 768px) {
@@ -116,7 +115,7 @@ html {
       margin-bottom: calc(100px/4); } }
   .bloggything .bloggythingWrapper .article h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 1.5px; }
   .bloggything .bloggythingWrapper .article h3 {
     font-size: 12px;
