@@ -16,7 +16,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    const API = 'https://jerome.api.jeromejero.me/wp-json'
+    const API = 'http://jerome.api.jeromejero.me/wp-json'
     const HOMEPAGE = `${API}/wp/v2/pages/15`
     axios.get(HOMEPAGE)
       .then(content => {
